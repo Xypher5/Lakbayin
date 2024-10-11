@@ -1,0 +1,277 @@
+html {
+    scroll-behavior: smooth;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+@font-face{
+    font-family: barabara;
+    src: url(fonts/BARABARA-final.ttf);
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero img{
+    width: 150px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    letter-spacing: 3px;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-family: barabara;
+    letter-spacing: 10px;
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.content a:hover{
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.second{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/mnlsun.jpg), linear-gradient(rgba(12,3,51,0.3),rgba(0,0,0,0.8));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+}
+.glass{
+    border: 2px solid rgba(221, 221, 221, 0.6);
+    border-radius: 50px;
+    margin-top: 50px;
+    padding: 40px;
+    background: linear-gradient(rgba(160,160,160, 0.4), rgba(160,160,160, 0.4));
+    backdrop-filter: blur(8px);
+}
+.second h1{
+    margin-top: 40px;
+    font-size: 5rem;
+}
+.second p{
+    font-size: 1.3rem;
+    margin-top: 20px;
+    
+}
+.secondp{
+    line-height: 2rem;
+    margin-right: 20%;
+}
+.second hr{
+    width: 300px;
+    border-top: 3px  solid;
+}
+.cards{
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 75px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.card{
+    width: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: rgb(175, 175, 175);
+    box-sizing: border-box;
+    padding: 15px;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card img{
+    width: 350px;
+    max-height: 200px;
+}
+.card:hover{
+    transform: translateY(-3px);
+}
+.card h2{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.card p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 1.4rem;
+}
+.card a{
+    text-decoration: none;
+    display: inline;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.card a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+.card:hover h2{
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: transparent;
+}
+.card1{
+    background: linear-gradient(0deg, 
+    rgba(255, 255, 255, 0.6), 
+    rgba(255, 255, 255, 0.6)),
+    url(images/mun_hall.jpg);
+}
+.card2{
+    background: linear-gradient(0deg, 
+    rgba(255, 255, 255, 0.6), 
+    rgba(255, 255, 255, 0.6)),
+    url(images/bgc-buildings-estate.jpg);
+}
+.card3{
+    background: linear-gradient(0deg, 
+    rgba(255, 255, 255, 0.6), 
+    rgba(255, 255, 255, 0.6)),
+    url(images/bahaynixypher.png);
+}
+.card4{
+    background: linear-gradient(0deg, 
+    rgba(255, 255, 255, 0.6), 
+    rgba(255, 255, 255, 0.6)),
+    url(images/bahaynijill.jpg);
+}
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(22, 22, 22);
+    color: rgb(212, 212, 212);
+    padding: 50px;
+}
+.ftitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ftitle h1{
+    font-family: barabara;
+    letter-spacing: 3px;
+}
+.ftitle img{
+    width: 100px;
+}
+footer p{
+    font-size: 12px;
+}
+footer li{
+    list-style: none;
+}
+.spacer5{
+    padding: 5px;
+}
+.spacer20{
+    padding: 20px;
+}
+footer ul li{
+    font-size: 12px;
+}

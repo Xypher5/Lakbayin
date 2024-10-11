@@ -1,0 +1,216 @@
+html {
+    scroll-behavior: smooth;
+    background-image: url(images/mnlsun.jpg), linear-gradient(rgba(12,3,51,0.3),rgba(0,0,0,0.8));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+@font-face{
+    font-family: barabara;
+    src: url(fonts/BARABARA-final.ttf);
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    flex-direction: row;
+    margin-left: 40px;
+    align-items: flex-start;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    letter-spacing: 3px;
+}
+nav img{
+    width: 150px;
+}
+.one{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.one h1{
+    font-family: barabara;
+    font-size: 5.32vw;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.one a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.24vw;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: 0.5s;
+    padding: 20px;
+}
+.one a:hover{
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 0.7vw;
+}
+.one h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.one hr{
+    width: 300px;
+    border-top: 5px solid #fff;
+}
+.glass{
+    border: 2px solid #969393;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 50px;
+    background: linear-gradient(rgba(173, 173, 173, 0.2),rgba(173, 173, 173, 0.2));
+    backdrop-filter: blur(2px);
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.aboutcontent {
+    font-size: 1vw;
+    color: rgb(212, 212, 212);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.onepart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.onepart h1{
+    text-align: center;
+    font-size: 3vw;
+    font-family: barabara;
+    transition: 0.5s;
+    color: #fff;
+}
+.onepart h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.nameholder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    
+}
+.imageholder{
+    display: flex;
+    flex-direction: row;
+}
+.photocard p{
+    text-align: center;
+    color: #fff;
+    font-size: 1vw;
+}
+.tayo{
+    font-family: barabara;
+}
+#image{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.spacer30{
+    padding: 30px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(22, 22, 22);
+    color: rgb(212, 212, 212);
+    padding: 50px;
+}
+.ftitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ftitle h1{
+    font-family: barabara;
+    letter-spacing: 3px;
+}
+.ftitle img{
+    width: 100px;
+}
+footer p{
+    font-size: 12px;
+}
+footer li{
+    list-style: none;
+}
+.spacer5{
+    padding: 5px;
+}
+.spacer20{
+    padding: 20px;
+}
+footer ul li{
+    font-size: 12px;
+}

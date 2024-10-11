@@ -1,0 +1,260 @@
+html {
+    scroll-behavior: smooth;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@font-face{
+    font-family: barabara;
+    src: url(fonts/BARABARA-final.ttf);
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),
+    url("images/mun_hall.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero img{
+    width: 150px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1vw;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
+    padding: 0.52vw;
+    border-radius: 20px;
+    letter-spacing: 3px;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.content{
+    text-align: center;
+}
+.content h1{
+    font-family: barabara;
+    font-size: 8.32vw;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.3vw;
+    border: 2px solid #fff;
+    padding: 0.73vw 3.6vw;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.content a:hover{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.3vw;
+    border: 2px solid #fff;
+    padding: 0.8vw 4vw;
+    border-radius: 50px;
+}
+.back-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .back-img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-img{
+        width: auto;
+        height: 100%;
+    }
+}
+.sheeshplaces{
+    display: flex;
+    flex-direction: column;
+}
+.sheshcont{
+    background: linear-gradient(0deg, 
+    rgba(255, 255, 255, 0.2), 
+    rgba(255, 255, 255, 0.2)),
+    url(images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.introtosheesh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    padding-left: 5%;
+    padding-right: 20%;
+}
+.introtosheesh h2{
+    font-size: 2.7vw;
+    /* margin-bottom: 10px; */
+}
+.introtosheesh p{
+    font-size: 1.3vw;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+}
+.rowvert{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: rgb(22, 22, 22);
+    color: rgb(212, 212, 212);
+}
+.rowvert hr{
+    width: 10%;
+    border-top: 3px solid;
+}
+.spacer50{
+    padding: 50px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 50%;
+    padding: 5%;
+    color: #000;
+}
+.sheeshplaces h2{
+    font-family: barabara;
+    font-size: 2.7vw;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.sheeshplaces h2:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+.col h2{
+    font-family: barabara;
+    font-size: 2.7vw;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.col h2:hover{
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: transparent;
+}
+.sheeshplaces p{
+    font-size: 1.3vw;
+}
+.spacer{
+    padding: 15px;
+}
+.colimg1{
+    background: url(images/taytaysheesh1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.colimg2{
+    background: url(images/taytaysheesh2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.colimg2{
+    background: url(images/taytaysheesh2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.colimg3{
+    background: url(images/jayepalog.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(22, 22, 22);
+    color: rgb(212, 212, 212);
+    padding: 50px;
+}
+.ftitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ftitle h1{
+    font-family: barabara;
+    letter-spacing: 3px;
+}
+.ftitle img{
+    width: 100px;
+}
+footer p{
+    font-size: 12px;
+}
+footer li{
+    list-style: none;
+}
+.spacer5{
+    padding: 5px;
+}
+.spacer20{
+    padding: 20px;
+}
+footer ul li{
+    font-size: 12px;
+}
